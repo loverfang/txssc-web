@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: '后台管理系统',
+  title: '号码验证系统',
 
   /**
    * @type {boolean} true | false
