@@ -2,19 +2,39 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 Vue.use(Router)
-
 export const constantRoutes = [
   {
       path: '/',
-      redirect:'/api/heweikua',
+      redirect:'/example/table',
       hidden: true
   },
+
+  // {
+  //     path: '/api/heweikua',
+  //     name: 'ApiResult',
+  //     component: () => import('@/views/index/index'),
+  //     hidden: true
+  // },
+
   {
-      path: '/api/heweikua',
-      name: 'ApiResult',
+      path: '/example',
+      redirect: '/example/table',
       component: () => import('@/views/index/index'),
-      hidden: true
+      name: 'Example',
+      children: [{
+          path: 'table',
+          name: 'Table',
+          component: () => import('@/views/index/index'),
+          hidden: true
+        },
+        {
+          path: 'tree',
+          name: 'Tree',
+          component: () => import('@/views/index/index'),
+          hidden: true
+        }]
   },
+
   // 404 page must be placed at the end !!!
   {
     path: '/404',
