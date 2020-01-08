@@ -5,7 +5,7 @@ Vue.use(Router)
 export const constantRoutes = [
   {
       path: '/',
-      redirect:'/example/table',
+      redirect:'/api/heima',
       hidden: true
   },
 
@@ -17,19 +17,19 @@ export const constantRoutes = [
   // },
 
   {
-      path: '/example',
-      redirect: '/example/table',
+      path: '/api',
+      redirect: '/api/heima',
       component: () => import('@/views/index/index'),
-      name: 'Example',
+      name: 'Api',
       children: [{
-          path: 'table',
-          name: 'Table',
+          path: 'heima',
+          name: 'Heima',
           component: () => import('@/views/index/index'),
           hidden: true
         },
         {
-          path: 'tree',
-          name: 'Tree',
+          path: 'heimayouhua',
+          name: 'Heimayouhua',
           component: () => import('@/views/index/index'),
           hidden: true
         }]
