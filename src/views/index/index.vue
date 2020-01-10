@@ -2,45 +2,45 @@
     <div align="center" style="width:1204px;" class="app-container">
     <el-table :data="dataList" border style="width: 100%" align="center" v-loading="listLoading">
         <el-table-column
-                prop="date"
+                prop="sscNumber"
                 label="期数"
                 width="160" align="center">
         </el-table-column>
 
         <el-table-column
-                prop="name"
+                prop="sscDanmaTou"
                 label="胆码"
                 width="100" align="center">
         </el-table-column>
 
         <el-table-column
-                prop="province"
+                prop="sscHe"
                 label="和值"
                 width="100" align="center">
         </el-table-column>
         <el-table-column
-                prop="city"
+                prop="sscHewei"
                 label="和尾"
                 width="100" align="center">
         </el-table-column>
         <el-table-column
-                prop="address"
+                prop="sscHeweiDuima"
                 label="对码"
                 width="100" align="center">
         </el-table-column>
         <el-table-column
-                prop="zip"
+                prop="sscSwitch"
                 label="切换状态"
                 width="100" align="center">
         </el-table-column>
         <el-table-column
-                prop="zip"
+                prop="sscTouzhumaCount"
                 label="总注数"
                 width="100" align="center">
         </el-table-column>
         <el-table-column
-                prop="zip"
-                label="投注号码"
+                prop="sscIsZhong"
+                label="是否中奖"
                 width="300" align="left">
         </el-table-column>
         <el-table-column
